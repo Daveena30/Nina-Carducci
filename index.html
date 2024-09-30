@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
         as="style">
     <link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style">
-    <link rel="preload" href="./assets/style.css" as="style">
+    <link rel="preload" href="./assets/style.min.css" as="style">
 
     <link rel="preload" href="./assets/bootstrap/bootstrap.bundle.min.js" as="script">
     <link rel="preload" href="./assets/maugallery.min.js" as="script">
@@ -41,7 +41,7 @@
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/style.min.css">
 
 	<script type="application/ld+json">
 		{
@@ -49,7 +49,7 @@
 		  "@type": "LocalBusiness",
 		  "name": "Nina Carducci",
 		  "image": "./assets/images/nina.webp",
-		  "url": "https://ninacarducci.github.io/",
+		  "url": "https://daveena30.github.io/nina-carducci/",
 		  "priceRange": "€ - €€",
 		  "address": {
 			"@type": "PostalAddress",
@@ -107,16 +107,36 @@
 				</div>
 				<div class="carousel-inner">
 					<figure class="carousel-item active">
-						<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100"
-							alt="un homme en costume marchant sur un passage piéton" loading="lazy" width="1920" height="888">
+						<picture>
+							<source srcset="./assets/images/slider/ryoji-iwata-unsplash.webp" type="image/webp">
+							<img src="./assets/images/slider/ryoji-unsplash.webp" 
+								 class="d-block img-fluid" 
+								 alt="un homme en costume marchant sur un passage piéton" 
+								 width="1920" 
+								 height="888">
+						</picture>
 					</figure>
 					<figure class="carousel-item">
-						<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100"
-							alt="Plusieurs personnes heureuses dans un concert" loading="lazy" width="1920" height="888">
+						<picture>
+							<source srcset="./assets/images/slider/nicholas-green-unsplash.webp" type="image/webp">
+							<img src="./assets/images/slider/nicholas-green-unsplash.webp" 
+								 class="d-block w-100" 
+								 alt="Plusieurs personnes heureuses dans un concert" 
+								 loading="lazy" 
+								 width="1920" 
+								 height="888">
+						</picture>
 					</figure>
 					<figure class="carousel-item">
-						<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
-							class="d-block w-100" alt="Deux mariés s'embrassant pendant leur mariage" loading="lazy" width="1920" height="887">
+						<picture>
+							<source srcset="./assets/images/slider/edward-cisneros-nsplash.webp" type="image/webp">
+							<img src="./assets/images/slider/edward-cisneros-nsplash.webp" 
+								 class="d-block w-100" 
+								 alt="Deux mariés s'embrassant pendant leur mariage" 
+								 loading="lazy" 
+								 width="1920" 
+								 height="887">
+						</picture>
 					</figure>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -133,7 +153,10 @@
 		</header>
 		<section id="about">
 			<figure class="picture left">
-				<img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci" loading="lazy">
+				<picture>
+					<source srcset="./assets/images/nina.webp" type="image/webp">
+					<img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci">
+				</picture>
 			</figure>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -154,31 +177,31 @@
 			<figure class="container py-3">
 				<div class="gallery" style="display: none">
 					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
+						src="./assets/images/gallery/concerts/aaron-paul-unsplash.webp"
 						alt="Concert depuis la foule avec un jeu de lumières rouge" loading="lazy" width="440" height="586"/>
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
+						src="./assets/images/gallery/entreprise/ali-morshedlou-unsplash.webp"
 						alt="Homme en costume" loading="lazy" width="400" height="600"/>
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
+						src="./assets/images/gallery/entreprise/jason-goodman-unsplash.webp"
 						alt="femme qui sourit lors d'une réunion" loading="lazy" width="650" height="440"/>
 					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
+						src="./assets/images/gallery/mariage/hannah-busing-unsplash.webp"
 						alt="Zoom sur les mains des mariés" loading="lazy" width="550" height="440"/>
 					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
+						src="./assets/images/gallery/portraits/ade-tunji-unsplash.webp"
 						alt="Homme qui ferme les yeux" loading="lazy" width="440" height="659"/>
 					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
+						src="./assets/images/gallery/mariage/jakob-owens-unsplash.webp"
 						alt="Des mariés se tenant la main et souriant en marchant" loading="lazy" width="440" height="660"/>
 					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
+						src="./assets/images/gallery/portraits/nino-van-prattenburg-unsplash.webp"
 						alt="Femme se touchant les cheveux" loading="lazy" width="440" height="661"/>
 					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
+						src="./assets/images/gallery/concerts/austin-unsplash.webp"
 						alt="Chanteur lors de son concert" loading="lazy" width="659" height="440"/>
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
+						src="./assets/images/gallery/entreprise/mateus-campos-felipe-unsplash.webp"
 						alt="Femme rigolant sur son ordinateur" loading="lazy" width="718" height="440"/>
 				</div>
 			</figure>
@@ -277,11 +300,11 @@
 		<span>Du lundi au vendredi de 10h à 19h</span>
 	</footer>
 
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js "
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.min.js"></script>
-	<script src="./assets/scripts.min.js"></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+	<script src="./assets/maugallery.min.js" defer></script>
+	<script src="./assets/scripts.min.js" defer></script>
 </body>
 
 </html>
