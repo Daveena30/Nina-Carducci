@@ -258,6 +258,12 @@ footer p {
 	margin-bottom: 0;
 }
 
+.carousel-control-prev,
+    .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.068);
+    border: none;
+    display: inline-block;
+}
 
 @media all and (max-width: 1180px) {
 	.picture {
@@ -387,3 +393,4 @@ footer p {
 		height: auto;
 	}
 }
+
